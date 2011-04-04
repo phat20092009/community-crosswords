@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Community Crosswords" default="copyall" basedir=".">
+	<property name="testdir" value="../../../xampp/htdocs/corejoomla" />
+	<property name="srcdir" value="${basedir}" />
+	<fileset dir="${srcdir}" id="allfiles">
+		<include name="**" />
+	</fileset>
+	<target name="copyall">
+		<copy todir="${testdir}">
+			<fileset refid="allfiles" />
+		</copy>
+	</target>
+</project>
